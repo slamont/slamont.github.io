@@ -10,3 +10,6 @@ Its simple description is:
 > run-parts - run scripts or programs in a directory
 
 Very useful when you want to add the *dir.d* concept in one of your scripts.
+
+[run-parts manpage](http://manpages.ubuntu.com/manpages/bionic/man8/run-parts.8.html)
+
