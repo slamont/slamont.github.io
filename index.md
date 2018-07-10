@@ -47,7 +47,7 @@ project_version=$(./mvnw -Dexec.executable='echo' -Dexec.args='${project.version
 
 ```
 
-I was looking to use it in a Jenkinsfile in preparation for a validation step that building. I also learned how to grab the output of a command and set it as a variable inside the Jenkinsfile.
+I was looking to use it in a Jenkinsfile in preparation for a validation step that I'm building in another project. It got me to learned how to grab the output of a command and set it as a variable inside the Jenkinsfile.
 
 ```
 
