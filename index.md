@@ -119,3 +119,32 @@ The trick here was the returnStdout parameter to the sh step
 * [returnStdout from stackoverflow](https://stackoverflow.com/questions/36547680/how-to-do-i-get-the-output-of-a-shell-command-executed-using-into-a-variable-fro)
 * [Official sh description](https://jenkins.io/doc/pipeline/steps/workflow-durable-task-step/#sh-shell-script)
 * [Comment on stackoverflow for extracting value of Maven](https://stackoverflow.com/a/36572816/1828564)
+
+
+### 2018-09-13
+
+Today I learned a very simple trick to get a mostly accurate date and time on a machine which doesn't have any ntp packages installed. With only `cat` and some socket tricks in Linux, it is possible to get the time from the legacy TIME protocol still available from NIST.
+
+```
+cat </dev/tcp/time.nist.gov/13
+```
+Will return something like the following:
+```
+58374 18-09-13 17:35:57 50 0 0  97.7 UTC(NIST) *  
+```
+
+It is also possible to do it using netcat:
+```
+nc time.nist.gov 13
+```
+
+Funny stuff, Star Wars in ascii !
+```
+cat </dev/tcp/towel.blinkenlights.nl/23
+```
+More telnet fun:
+```
+telnet telehack.com
+```
+ 
+* [Taken from a comment on superuser.com](https://superuser.com/a/635039)
