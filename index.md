@@ -138,6 +138,8 @@ It is also possible to do it using netcat:
 nc time.nist.gov 13
 ```
 
+---
+
 Funny stuff, Star Wars in ascii !
 ```
 cat </dev/tcp/towel.blinkenlights.nl/23
@@ -146,5 +148,37 @@ More telnet fun:
 ```
 telnet telehack.com
 ```
- 
+
 * [Taken from a comment on superuser.com](https://superuser.com/a/635039)
+
+
+### 2018-09-14
+
+Today I learned about the command `fold`.
+This command is used to wrap the input into a maximum number of columns.
+See the following examples to better understand:
+
+No fold
+```
+echo "Bacon ipsum dolor amet tri-tip porchetta flank pork loin andouille shoulder chicken sirloin shankle. T-bone hamburger turkey rump boudin ham hock corned beef. Porchetta rump tenderloin shank, meatloaf meatball capicola jowl prosciutto landjaeger brisket alcatra short ribs bacon. Chicken filet mignon biltong shoulder."
+Bacon ipsum dolor amet tri-tip porchetta flank pork loin andouille shoulder chicken sirloin shankle. T-bone hamburger turkey rump boudin ham hock corned beef. Porchetta rump tenderloin shank, meatloaf meatball capicola jowl prosciutto landjaeger brisket alcatra short ribs bacon. Chicken filet mignon biltong shoulder.
+```
+
+fold with default 80 columns
+```
+echo "Bacon ipsum dolor amet tri-tip porchetta flank pork loin andouille shoulder chicken sirloin shankle. T-bone hamburger turkey rump boudin ham hock corned beef. Porchetta rump tenderloin shank, meatloaf meatball capicola jowl prosciutto landjaeger brisket alcatra short ribs bacon. Chicken filet mignon biltong shoulder." | fold
+Bacon ipsum dolor amet tri-tip porchetta flank pork loin andouille shoulder chic
+ken sirloin shankle. T-bone hamburger turkey rump boudin ham hock corned beef. P
+orchetta rump tenderloin shank, meatloaf meatball capicola jowl prosciutto landj
+aeger brisket alcatra short ribs bacon. Chicken filet mignon biltong shoulder.
+```
+
+fold with 160 columns
+```
+echo "Bacon ipsum dolor amet tri-tip porchetta flank pork loin andouille shoulder chicken sirloin shankle. T-bone hamburger turkey rump boudin ham hock corned beef. Porchetta rump tenderloin shank, meatloaf meatball capicola jowl prosciutto landjaeger brisket alcatra short ribs bacon. Chicken filet mignon biltong shoulder." | fold -w 160
+Bacon ipsum dolor amet tri-tip porchetta flank pork loin andouille shoulder chicken sirloin shankle. T-bone hamburger turkey rump boudin ham hock corned beef. P
+orchetta rump tenderloin shank, meatloaf meatball capicola jowl prosciutto landjaeger brisket alcatra short ribs bacon. Chicken filet mignon biltong shoulder.
+```
+
+It could be really useful when you want to quickly format a logfile containing very long lines... It never hurts to learn something new.
+
