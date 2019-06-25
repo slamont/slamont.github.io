@@ -35,5 +35,5 @@ kramdown:
   hard_wrap: false
 future: true
 jailed: false
-theme: jekyll-theme-architect
+theme: jekyll-theme-primer
 gfm_quirks: paragraph_end
