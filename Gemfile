@@ -11,5 +11,6 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
   gem 'jekyll-theme-primer'
+  gem 'jekyll-remote-include'
   gem 'github-pages'
 end

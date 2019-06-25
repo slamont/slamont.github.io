@@ -2,6 +2,4 @@
 layout: default
 title: About
 ---
-# About page
-
-This page tells you a little bit about me.
+{% remote_include https://raw.githubusercontent.com/slamont/cv-resume/master/cv_slamontagne_en.md %}

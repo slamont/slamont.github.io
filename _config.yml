@@ -25,6 +25,7 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
+  - jekyll-remote-include
 
 excerpt_separator: ""
 markdown: kramdown
@@ -36,4 +37,5 @@ kramdown:
 future: true
 jailed: false
 theme: jekyll-theme-primer
+#theme: jekyll-theme-tactile
 gfm_quirks: paragraph_end

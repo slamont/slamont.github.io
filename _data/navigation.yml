@@ -1,7 +1,5 @@
 ---
-- name: Home
+- name: Today I Learned
   link: /
 - name: About
   link: /about.html
-- name: Today I Learned
-  link: /TIL.html
