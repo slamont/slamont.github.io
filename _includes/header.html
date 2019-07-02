@@ -1,0 +1,13 @@
+<div class="header-wrapper">
+<header>
+  <div class="header">
+      {% if site.title and site.title != page.title %}
+      <h1 class="header">{{ site.title }}</h1>
+      <p class="header">{{ site.description }}</p>
+      {% endif %}
+
+    {% include navigation.html %}
+  </div>
+</header>
+
+</div>

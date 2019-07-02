@@ -1,5 +1,5 @@
-title: My Space on the web
-description: Personal website made with Jekyll on Github Pages.
+title: Sly's little web space
+description: Personal website mostly for my notes and resume
 
 defaults:
   - scope:
@@ -16,10 +16,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-coffeescript
-  - jekyll-gist
   - jekyll-github-metadata
-  - jekyll-paginate
   - jekyll-relative-links
   - jekyll-optional-front-matter
   - jekyll-readme-index
@@ -36,6 +33,6 @@ kramdown:
   hard_wrap: false
 future: true
 jailed: false
-theme: jekyll-theme-primer
-#theme: jekyll-theme-tactile
+#theme: jekyll-theme-primer
+theme: jekyll-theme-dinky
 gfm_quirks: paragraph_end
