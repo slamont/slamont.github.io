@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>Personal Notes</h1>
+
+<h2>Today I Learned</h2>
+
+{% for post in site.posts %}
+<div class="post-wrapper">
+  <a href="{{ post.url }}">{{ post.date | date_to_string }}</a> {{ post.title }}
+  {{ post.content }}
+
+  <hr />
+</div>
+{% endfor %}

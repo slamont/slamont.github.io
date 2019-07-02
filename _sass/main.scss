@@ -1,3 +1,40 @@
 .current {
   color: green;
 }
+
+@media print {
+  @page {
+      margin-top: 2cm;
+      margin-bottom: 2cm;
+      margin-left: 2cm;
+      margin-right: 2cm;
+  }
+
+  body {
+    padding:0.4in;
+    font-size:12pt;
+    color:#444;
+  }
+
+  div.header-wrapper, header {
+    display:none;
+  }
+
+  p, div.highlight {
+    page-break-inside: avoid;
+  }
+
+  pre code {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  div.post-wrapper {
+    page-break-after: always;
+  }
+
+  footer {
+    display: none;
+  }
+}
