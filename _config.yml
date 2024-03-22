@@ -1,6 +1,8 @@
 title: Sly's little web space
 description: Personal website mostly for my notes and resume
+author: Sylvain Lamontagne
 
+repository: slamont/slamont.github.io
 defaults:
   - scope:
       path: ""
