@@ -3,6 +3,7 @@ description: Personal website mostly for my notes and resume
 author: Sylvain Lamontagne
 
 repository: slamont/slamont.github.io
+github: [metadata]
 defaults:
   - scope:
       path: ""
@@ -28,7 +29,6 @@ plugins:
 
 excerpt_separator: ""
 markdown: kramdown
-github: [metadata]
 encoding: UTF-8
 kramdown:
   input: GFM
